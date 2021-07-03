@@ -38,7 +38,7 @@ class Application(tk.Frame):
         menu.add_command(label="B")
 
         # 3. menubutton内へmenuを入れる
-        # menubutton Widgetのmenu optionへ、作成したmenuを入れる。
+        # menubutton Widgetのmenu optionへ、2. で作成したmenuを入れる。
         mb["menu"] = menu
 
 # Tkinter初学者参考 : https://docs.python.org/ja/3/library/tkinter.html#a-simple-hello-world-program
