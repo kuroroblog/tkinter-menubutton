@@ -22,6 +22,10 @@ class Application(tk.Frame):
         # text : テキスト情報
         mb = tk.Menubutton(frame, text="Select alphabet")
 
+        # frame Widget(Frame)を親要素とした場合に、menubutton Widgetをどのように配置するのか?
+        # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
+        mb.pack()
+
         # 2. menuを作成する
         # menubutton Widgetを親要素として、menu Widgetを作成する。
         # Menuについて : https://kuroro.blog/python/ZITZ7dM4nundAhMbChXs/
@@ -36,10 +40,6 @@ class Application(tk.Frame):
         # 3. menubutton内へmenuを入れる
         # menubutton Widgetのmenu optionへ、作成したmenuを入れる。
         mb["menu"] = menu
-
-        # frame Widget(Frame)を親要素とした場合に、menubutton Widgetをどのように配置するのか?
-        # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
-        mb.pack()
 
 # Tkinter初学者参考 : https://docs.python.org/ja/3/library/tkinter.html#a-simple-hello-world-program
 if __name__ == "__main__":
