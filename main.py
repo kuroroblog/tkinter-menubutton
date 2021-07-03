@@ -30,10 +30,10 @@ class Application(tk.Frame):
         # menubutton Widgetを親要素として、menu Widgetを作成する。
         # Menuについて : https://kuroro.blog/python/ZITZ7dM4nundAhMbChXs/
         menu = tk.Menu(mb)
-        # menuの選択肢を追加する。
+        # menuへ選択肢を追加する。
         # label : 選択肢のテキスト。'A'とする。
         menu.add_command(label="A")
-        # menuの選択肢を追加する。
+        # menuへ選択肢を追加する。
         # label : 選択肢のテキスト。'B'とする。
         menu.add_command(label="B")
 
